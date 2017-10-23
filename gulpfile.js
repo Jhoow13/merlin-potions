@@ -5,7 +5,10 @@ var concat = require('gulp-concat');
 var less = require('gulp-less');
 
 var appFiles = {
-    cssFiles:[
+    cssDependences:[
+        'node_modules/bootstrap/dist/css/bootstrap.min.css'
+    ],
+    lessFiles:[
         'styles/*.less'
     ],
     jsFiles:[
@@ -19,10 +22,16 @@ gulp.task('clean', function(){
 });
 
 gulp.task('css', function(){
-    return gulp.src(appFiles.cssFiles)
+    return gulp.src(appFiles.cssDependences)
+    .pipe(concat('css-dependences.css'))
+    .pipe(gulp.dest('src/styles/'))
+});
+
+gulp.task('less', function(){
+    return gulp.src(appFiles.lessFiles)
     .pipe(less())
     .pipe(concat('style.css'))
-    .pipe(gulp.dest('src'));
+    .pipe(gulp.dest('src/styles/'))    
 });
 
 gulp.task('js', function(){
@@ -36,7 +45,7 @@ gulp.task('reload', function(done){
     done();
 });
 
-gulp.task('serve', ['css','js'], function(){
+gulp.task('serve', ['css','less', 'js'], function(){
   browserSync.init({
     server: {
         baseDir: "./"
@@ -45,6 +54,7 @@ gulp.task('serve', ['css','js'], function(){
 
   gulp.watch('index.html', ['reload']);
   gulp.watch(appFiles.cssFiles, ['css', 'reload']);
+  gulp.watch(appFiles.lessFiles, ['less', 'reload']);
   gulp.watch(appFiles.jsFiles, ['js', 'reload']);
 });
 
