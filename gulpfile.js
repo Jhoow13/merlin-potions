@@ -31,13 +31,13 @@ gulp.task('less', function(){
     return gulp.src(appFiles.lessFiles)
     .pipe(less())
     .pipe(concat('style.css'))
-    .pipe(gulp.dest('src/styles/'))    
+    .pipe(gulp.dest('src/styles/'))
 });
 
 gulp.task('js', function(){
     return gulp.src(appFiles.jsFiles)
     .pipe(concat('script.js'))
-    .pipe(gulp.dest('src'));
+    .pipe(gulp.dest('src/js/'));
 });
 
 gulp.task('reload', function(done){
