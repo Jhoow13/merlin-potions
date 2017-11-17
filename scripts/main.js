@@ -5,13 +5,10 @@ function getPotions(){
         if (this.readyState == 4 && this.status == 200){
             var objPotions = JSON.parse(xhttp.response);
 
+
             for (var potion in objPotions.potions){
                 var itemPotion = objPotions.potions[potion];
-                document.querySelector('main').innerHTML += `<ul>
-                <li>
-                    `+itemPotion.name+`
-                </li>
-            </ul>`;
+
             }
         }
     };
