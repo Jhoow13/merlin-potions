@@ -1,16 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/style.css">
-    <title>Start-Here</title>
-</head>
-<body>
-    <main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="src/styles/css-dependences.css">
+        <link rel="stylesheet" href="src/styles/style.css">
+        <title>Start-Here</title>
+    </head>
+    <body>
+        <main class="container-fluid">
+            <header>
+                <section>
+                    <div class="logo">
+                        <p>merlin's potions</p>
+                        <p>fine potions since 1026</p>
+                    </div>
+                    <form class="search">
+                        <i></i>
+                        <input type="search">
+                    </form>
+                    <div>
+                        <p>
+                            Free shipping on order over $50
+                        </p>
+                        <i></i>
+                        <p>BAG: <span>1</span></p>
+                    </div>
+                </section>
 
-    </main>
-    <script src="src/js/script.js"></script>
-</body>
+                <nav class="navbar navbar-default navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="navbar-form navbar-right">
+                                <button type="submit" class="btn btn-link">Sign in</button>
+                                <button type="submit" class="btn btn-link">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/img/aging-potion.png" alt="" class="img-responsive">
+                    <p><span></span></p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/bulgeye-potion.png" alt="" class="img-responsive">
+                    <p><span></span></p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/dragon-tonic.png" alt="" class="img-responsive">
+                    <p><span></span></p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/love-potion.png" alt="" class="img-responsive">
+                    <p><span></span></p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/polyjuice-potion.png" alt="" class="img-responsive">
+                    <p><span></span></p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/sleeping-draught.png" alt="" class="img-responsive">
+                    <p><span></span></p>
+                </div>
+            </div>
+
+            <footer>
+                <section>
+                    <ul class="menu-footer">
+                        <li>company</li>
+                        <li>contact us</li>
+                        <li>shipping</li>
+                        <li>returns</li>
+                        <li>carrers</li>
+                    </ul>
+                    <ul class="social">
+                        <li><i></i></li>
+                        <li><i></i></li>
+                        <li><i></i></li>
+                        <li><i></i></li>
+                        <li><i></i></li>
+                    </ul>
+                    <p>&copy; 2017 Merlin's Potions. All Rights Reserved</p>
+                </section>
+                <section class="newsletter">
+                    <p>Sign up for our Newsletter</p>
+                    <p>Sign up for our newslleter &amp; get exclusive discounts!</p>
+                    <form>
+                        <input type="text" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-default">submit</button>
+                    </form>
+                </section>
+            </footer>
+        </main>
+        <script src="src/js/script.js"></script>
+    </body>
 </html>
-
