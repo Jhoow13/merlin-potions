@@ -10,11 +10,11 @@ function getPotions(){
 
                 var id = potion.id;
                 lista.innerHTML +=
-                `<li class="col-md-4">
+                `<li class="col-md-4 col-xs-6">
                     <img src="assets/img/${potion.image}" alt="" class="img-responsive" onclick="lightboxStatus(false,${id})">
                     <p>
-                        <span>${potion.name}</span> -
-                        <span>${potion.price}</span>
+                        <span>${potion.name} - </span>
+                        <span class="price">$${potion.price}</span>
                     </p>
                 </li>`
             }
