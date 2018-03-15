@@ -1,4 +1,96 @@
-.lightbox {
+body{
+  main{
+    &.container-fluid{
+      padding:0px
+    }
+    header{
+      div.jumbotron{
+        margin:0px;
+        padding: 0px;
+      }
+    }
+    footer{
+      background-color: #e6e6e6;
+      padding: 50px;
+      ul{
+        list-style: none;
+        padding: 0px;
+        li{
+          display: inline;
+        }
+
+        &.menu-footer{
+          width:450px;
+          padding-bottom: 20px;
+          li{
+            font-size: 20px;
+            margin:10px;
+            text-transform: uppercase;
+            color: #d73a1e;
+          }
+        }
+
+        &.social{
+          padding-bottom: 40px;
+          li{
+            margin: 0px 15px;
+          }
+          img{
+            width:35px;
+            height:35px;
+            border-radius: 50%;
+          }
+        }
+      }
+      span{
+        color:#555;
+        font-size: 16px;
+      }
+
+      .newsletter{
+        background-color: #fff;
+        padding: 30px 20px;
+        font-size: 17px;
+        border-radius: 5px;
+        width: 450px;
+        height: 160px;
+        p.italic{
+          font-style: italic;
+        }
+        input.form-control{
+          width:285px;
+        }
+        button{
+          padding: 6px 25px;
+          &.btn-default{
+            text-transform: uppercase;
+            background-color: #d73a1e;
+            border-color: #d73a1e;
+            color: #fff;
+            &:focus{
+              background-color: #d73a1e;
+              border-color: #d73a1e;
+              color:#fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #lista-produtos{
+    li{
+      list-style: none;
+      img{
+        cursor: pointer;
+        width:250px;
+        height:250px;
+        border:1px solid black;
+      }
+    }
+  }
+
+  .lightbox {
     display: none;
     position: fixed;
     z-index: 1;
@@ -12,26 +104,26 @@
     background-color: rgba(0,0,0,0.75);
 
     .lightbox-content {
-        background-color: rgb(255,255,255);
-        margin: auto;
-        padding: 20px;
-        width: 50%;
+      background-color: rgb(255,255,255);
+      margin: auto;
+      padding: 20px;
+      width: 50%;
 
-        ul{
-            list-style: none;
-        }
+      ul{
+          list-style: none;
+      }
     }
+  }
+
 }
 
-#lista-produtos{
-    li{
-        list-style: none;
-        img{
-            cursor: pointer;
-            width:250px;
-            height:250px;
-            border:1px solid black;
-        }
-    }
 
+.form-group{
+  .form-control{
+    border:1px solid black;
+    &:focus{
+      border-color:black;
+      box-shadow: none;
+    }
+  }
 }

@@ -1,99 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="src/styles/css-dependences.css">
-        <link rel="stylesheet" href="src/styles/style.css">
-        <title>Start-Here</title>
-    </head>
-    <body>
-        <main class="container-fluid">
-            <header>
-                <section>
-                    <div class="logo">
-                        <p>merlin's potions</p>
-                        <p>fine potions since 1026</p>
-                    </div>
-                    <form class="search">
-                        <i></i>
-                        <input type="search">
-                    </form>
-                    <div>
-                        <p>
-                            Free shipping on order over $50
-                        </p>
-                        <i></i>
-                        <p>BAG: <span>1</span></p>
-                    </div>
-                </section>
 
-                <nav class="navbar navbar-default">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            </button>
-                        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/styles/css-dependences.css">
+  <link rel="stylesheet" href="src/styles/style.css">
+  <title>Start-Here</title>
+</head>
 
-                        <div id="navbar" class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">About</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
-                            </ul>
-                            <div class="navbar-form navbar-right">
-                                <button type="submit" class="btn btn-link">Sign in</button>
-                                <button type="submit" class="btn btn-link">Sign up</button>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-
-            <ul class="row" id="lista-produtos"></ul>
-
-            <footer>
-                <section>
-                    <ul class="menu-footer">
-                        <li>company</li>
-                        <li>contact us</li>
-                        <li>shipping</li>
-                        <li>returns</li>
-                        <li>carrers</li>
-                    </ul>
-                    <ul class="social">
-                        <li><i></i></li>
-                        <li><i></i></li>
-                        <li><i></i></li>
-                        <li><i></i></li>
-                        <li><i></i></li>
-                    </ul>
-                    <p>&copy; 2017 Merlin's Potions. All Rights Reserved</p>
-                </section>
-                <section class="newsletter">
-                    <p>Sign up for our Newsletter</p>
-                    <p>Sign up for our newslleter &amp; get exclusive discounts!</p>
-                    <form>
-                        <input type="text" placeholder="Enter your email">
-                        <button type="submit" class="btn btn-default">submit</button>
-                    </form>
-                </section>
-            </footer>
-
-            <div class="lightbox">
-                <div class="lightbox-content"></div>
+<body>
+  <main class="container-fluid">
+    <header>
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h1>Merlin's Potions</h1>
+              <span>fine potions since 1026</span>
             </div>
-        </main>
-        <script src="src/js/script.js"></script>
-    </body>
+            <div class="col-md-3">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search our stock">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <p>Free shipping on orders over $50</p>
+            </div>
+            <div class="col-md-3">
+              <i>cart</i>
+              <span>BAG:1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+              aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Potions
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ingredients
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Books
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Supplies
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Charms
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                </ul>
+              </li>
+              <li class="active"><a>Clearance!</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a>Sign in</a>
+              </li>
+              <li>
+                <a>Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <ul class="row" id="lista-produtos"></ul>
+
+    <footer class="row">
+      <section class="col-md-6">
+        <ul class="menu-footer">
+          <li>company</li>
+          <li>contact us</li>
+          <li>shipping</li>
+          <li>returns</li>
+          <li>carrers</li>
+        </ul>
+        <ul class="social">
+          <li>
+            <img src="assets/icons/facebook.svg">
+          </li>
+          <li>
+            <img src="assets/icons/twitter.svg">
+          </li>
+          <li>
+            <img src="assets/icons/pinterest.svg">
+          </li>
+          <li>
+            <img src="assets/icons/tumblr.svg">
+          </li>
+          <li>
+            <img src="assets/icons/googleplus.svg">
+          </li>
+        </ul>
+        <span>&copy; 2017 Merlin's Potions. All Rights Reserved</span>
+      </section>
+      <section class="col-md-6 newsletter">
+        <p class="italic">Sign up for our Newsletter</p>
+        <p>Sign up for our newsletter &amp; get exclusive discounts!</p>
+        <form class="form-inline">
+          <div class="form-group">
+            <input class="form-control "type="text" placeholder="Enter your email">
+            <button type="submit" class="btn btn-default">submit</button>
+          </div>
+        </form>
+      </section>
+    </footer>
+
+    <div class="lightbox">
+      <div class="lightbox-content"></div>
+    </div>
+  </main>
+  <script src="src/js/js-dependences.js"></script>
+  <script src="src/js/script.js"></script>
+</body>
+
 </html>
