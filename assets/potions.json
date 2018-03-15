@@ -1,6 +1,5 @@
-{
-  "potions": {
-    "1": {
+[
+    {
       "id": 1,
       "name": "Aging Potion",
       "image": "aging-potion.png",
@@ -15,7 +14,7 @@
         "Bat Tongue"
       ]
     },
-    "2": {
+    {
       "id": 2,
       "name": "Bulgeye Potion",
       "image": "bulgeye-potion.png",
@@ -26,7 +25,7 @@
         "Eel eyes"
       ]
     },
-    "3": {
+    {
       "id": 3,
       "name": "Dragon Tonic",
       "image": "dragon-tonic.png",
@@ -38,7 +37,7 @@
         "Giant Purple Toad warts"
       ]
     },
-    "4": {
+    {
       "id": 4,
       "name": "Love Potion",
       "image": "love-potion.png",
@@ -51,7 +50,7 @@
         "Newt eyes"
       ]
     },
-    "5": {
+    {
       "id": 5,
       "name": "Polyjuice Potion",
       "image": "polyjuice-potion.png",
@@ -66,7 +65,7 @@
         "Shredded Boomslang skin"
       ]
     },
-    "6": {
+    {
       "id": 6,
       "name": "Sleeping Draught",
       "image": "sleeping-draught.png",
@@ -79,5 +78,4 @@
         "Valerian sprigs"
       ]
     }
-  }
-}
+]

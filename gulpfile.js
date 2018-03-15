@@ -12,7 +12,7 @@ var appFiles = {
         'styles/*.less'
     ],
     jsFiles:[
-        'scripts/main.js'
+        'scripts/*.js'
     ]
 };
 
