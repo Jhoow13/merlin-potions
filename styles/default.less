@@ -78,8 +78,6 @@ body{
           list-style: none;
           img{
             cursor: pointer;
-            // width:250px;
-            // height:250px;
             box-shadow: 1px 3px 5px rgba(0, 0, 0, .2);
           }
           p{
@@ -149,19 +147,6 @@ body{
           max-width:60%;
           display: inline-block;
         }
-        button{
-          &.btn-default{
-            text-transform: uppercase;
-            background-color: #d73a1e;
-            border-color: #d73a1e;
-            color: #fff;
-            &:focus{
-              background-color: #d73a1e;
-              border-color: #d73a1e;
-              color:#fff;
-            }
-          }
-        }
       }
     }
 
@@ -178,20 +163,43 @@ body{
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.75);
 
+    .close{
+      margin-top: -20px;
+    }
+
     .lightbox-content {
+      h1,h2{
+        font-size: 20px;
+        margin-top:10px;
+        margin-bottom: 0px;
+      }
+      p.price{
+        color:#d73a1e;
+      }
       background-color: rgb(255,255,255);
       margin: auto;
       padding: 20px;
       width: 50%;
-
       ul{
           list-style: none;
       }
     }
   }
-
 }
 
+button{
+  &.btn-default{
+    text-transform: uppercase;
+    background-color: #d73a1e;
+    border-color: #d73a1e;
+    color: #fff;
+    &:focus,&:hover{
+      background-color: #d73a1e;
+      border-color: #d73a1e;
+      color:#fff;
+    }
+  }
+}
 
 .form-group{
   .form-control{
