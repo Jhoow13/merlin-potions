@@ -52,11 +52,22 @@ body{
         }
       }
       nav{
+        .nav li a{
+          padding: 10px;
+        }
         &.navbar-default{
           background-color: #523468;
-          .navbar-nav li {
-            margin: 10px;
-            a{
+
+          .navbar-toggle{
+            border-color: transparent;
+            .icon-bar{
+              background-color: #fff;
+            }
+            &:focus,&:hover{
+              background-color: transparent;
+            }
+          }
+          .navbar-nav li a{
               color: #fff;
               &:hover{
                 color: #fff;
@@ -64,7 +75,7 @@ body{
                 border-radius: 5px;
               }
             }
-          }
+
         }
       }
     }
@@ -81,7 +92,9 @@ body{
             box-shadow: 1px 3px 5px rgba(0, 0, 0, .2);
           }
           p{
+            margin-top: 5px;
             text-align: center;
+            font-size: 12px;
             width: 100%;
             span{
               font-weight: bold;
@@ -208,5 +221,22 @@ button{
       border-color:black;
       box-shadow: none;
     }
+  }
+}
+
+@media (max-width:991px){
+  .copyright{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .social{
+    text-align: center;
+  }
+}
+
+@media (max-width:767px){
+  body header nav .nav li a{
+    padding:5px 35px;
   }
 }
