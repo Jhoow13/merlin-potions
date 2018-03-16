@@ -18,19 +18,20 @@ function getPotionInfo(id){
 
             conteudo.innerHTML = `
             <div class="row">
-                <div class="col-md-6">
-                    <img src="assets/img/${itemPotion.image}" alt="" class="img-responsive" onclick="lightboxStatus(false,${id})">
-                </div>
-                <div class="col-md-6">
-                    <h1>${itemPotion.name}</h1>
-                    <h2>Use/Effect:</h2>
-                    <p>${itemPotion.effect}</p>
-                    <h2>Ingredients:</h2>
-                    <ul>${ingredients.join("")}</ul>
-                    <h2>Price</h2>
-                    <p>${itemPotion.price}</p>
-                    <button>add to cart</button>
-                </div>
+              <span class="close" onclick="lightboxStatus(true)">x</span>
+              <div class="col-md-6">
+                <img src="assets/img/${itemPotion.image}" alt="" class="img-responsive">
+              </div>
+              <div class="col-md-6">
+                <h1>${itemPotion.name}</h1>
+                <h2>Use/Effect:</h2>
+                <p>${itemPotion.effect}</p>
+                <h2>Ingredients:</h2>
+                <ul>${ingredients.join("")}</ul>
+                <h2>Price</h2>
+                <p class="price">$${itemPotion.price}</p>
+                <button class="btn btn-default">add to cart</button>
+              </div>
             </div>
             `
         }
@@ -53,8 +54,7 @@ function lightboxStatus(isOpen,id){
 
 document.addEventListener('keyup', function(e){
     if(e.keyCode == '27'){
-        lightbox.style.display = "none";
-        document.body.style.overflow = "auto";
+        lightboxStatus(true);
     };
 })
 
