@@ -1,16 +1,10 @@
 {
-  "name": "start-here",
+  "name": "merlin-potions",
   "version": "1.0.0",
-  "description": "Boilerplate for simple projects",
+  "description": "Loja de poções do sr. Merlin",
   "main": "index.html",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-less": "^3.3.2",
-    "gulp-uglify": "^3.0.0",
     "jquery": "^3.3.1"
   },
   "devDependencies": {
@@ -25,17 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jhoow13/start-here.git"
+    "url": "git+https://github.com/Jhoow13/merlin-potions.git"
   },
-  "keywords": [
-    "boilerplate",
-    "start-here",
-    "simple-projects"
-  ],
+  "keywords": [],
   "author": "joelcsilva@outlook.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Jhoow13/start-here/issues"
+    "url": "https://github.com/Jhoow13/merlin-potions/issues"
   },
-  "homepage": "https://github.com/Jhoow13/start-here#readme"
+  "homepage": "https://github.com/Jhoow13/merlin-potions#readme"
 }
